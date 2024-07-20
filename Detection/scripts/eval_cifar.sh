@@ -1,0 +1,13 @@
+python Detection/OOD_score_method/feature_extract.py\
+       --model_resnet resnet18\
+       --dataset cifar10\
+       --save_path feature/cifar10\
+       --ckpt_path ...\
+       --fc_save_patch fc/cifar10/fc.pkl\
+       --n_classes 10
+python Detection/OOD_score_method/eval_for_ood.py\
+       --model_resnet resnet18\
+       --dataset cifar10\
+       --save_path feature/cifar10\
+       --fc fc/cifar10/fc.pkl\
+       --n_classes 10

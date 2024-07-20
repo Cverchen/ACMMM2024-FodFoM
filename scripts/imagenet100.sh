@@ -1,0 +1,13 @@
+python train_diffusion_fake_ood_supcon.py \
+    --expriment_name 'I2Tdiffusion_OOD_In100'\
+    --model 'resnet50'\
+    --dataset 'ImageNet100'\
+    --size 224\
+    --method 'I2Tdiffusion_OOD_DiffusionFake'\
+    --print_freq 2000\
+    --save_freq 200\
+    --batch_size 128\
+    --num_workers 16\
+    --epochs 200\
+    --learning_rate 0.05\
+    --lr_decay_epochs '100,150,180'

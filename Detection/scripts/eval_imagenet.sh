@@ -1,0 +1,14 @@
+python Detection/OOD_score_method/feature_extract_largescale.py\
+       --model_resnet resnet50\
+       --dataset ImageNet100-I\
+       --ckpt_path ...\
+       --save_path feature/ImageNet100\
+       --end_path resnet50\
+       --fc_save_patch fc/ImageNet100/fc.pkl\
+       --n_classes 100
+python Detection/OOD_score_method/eval_for_ood_largescale.py\
+       --model_resnet resnet50\
+       --dataset ImageNet100\
+       --save_path feature/ImageNet100\
+       --fc fc/ImageNet100/fc.pkl\
+       --n_classes 100
