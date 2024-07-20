@@ -43,7 +43,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-*/home/2022/jiankang/Storage/Mycode/ACMMM-FodFoM/stable_diffusion/src/taming-transformers
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
