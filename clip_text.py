@@ -227,7 +227,7 @@ def parse_option():
     parser.add_argument('--slide', type=float, default=3e-5, help='The step size of the move on the direction vector starts from slide')
     parser.add_argument('--add_slide', type=float, default=3e-5, help='The step length of each move')
     parser.add_argument('--fake_feature_path', type=str, help='Path to where the generated false text representation is stored')
-    parser.add_argumetn('--num_per_sample', type=int, default=5, help='Number of spurious features generated per edge vector')
+    parser.add_argument('--num_per_sample', type=int, default=5, help='Number of spurious features generated per edge vector')
     parser.add_argument('--fake_token_path', type=str, help='Storage path for fake token obtained using fake embedding')
     opt = parser.parse_args()
     return opt
