@@ -241,7 +241,7 @@ if __name__ == '__main__':
     add_slide = args.add_slide
     fake_feature_path = args.fake_feature_path
     fake_token_path = args.fake_token_path
-    num_per_sample = args.num_per_smaple
+    num_per_sample = args.num_per_sample
     if args.dataset == 'cifar10':
         get_text_prototype_cifar10()
         edge_feature_class, mean_class = edge_feature_search_maha(n_class, percentage, feature_path='cifar10_text_feature')
