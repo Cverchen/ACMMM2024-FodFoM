@@ -96,7 +96,7 @@ After that, fake token data for each category is saved for stable diffusion to g
 Go to the stable diffusion folder, you need to download [openai's clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14) and put it under this folder.  
 Then go to the scripts/txt2img.py, you need to change #outdir# to hold fake images you will generate  
 Run the following script to generate fake ood images(CIFAR and ImageNet100)
-`python scripts/txt2img.py --dataset ImageNet100 --n_class 10 --fake_token_path ... --outdir ...`  
+`python scripts/txt2img.py --dataset ImageNet100 --n_class 100 --fake_token_path ... --outdir ...`  
 # Background Image Generation by GroundingDINO
 Go to the GroundingDINO folder, cd 'GroundingDINO/demo'  
 The main file that generates the background image is in reference_on_a_image_background.py
